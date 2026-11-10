@@ -1,4 +1,4 @@
-# Helen Zhang — Personal Website
+# Helen Zhang, Personal Website
 
 Personal website for Helen Zhang, Computer Science at the University of Utah.
 
