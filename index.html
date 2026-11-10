@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Helen Zhang — Computer Science, University of Utah</title>
+  <meta name="description" content="Helen Zhang is a Computer Science student at the University of Utah working on machine learning for real-world navigation, egocentric video, and neural data.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Helen Zhang</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Computer Science · University of Utah</p>
+        <h1>Helen Zhang</h1>
+        <p class="lede">I study how people navigate the real world — and how machine learning can help us understand what we see, remember, and do along the way.</p>
+        <p class="lede-secondary">My work connects egocentric video, movement, and intracranial EEG to ask a practical question: what evidence do we need, and how should we collect it next?</p>
+        <div class="actions">
+          <a class="button primary" href="#research">View research</a>
+          <a class="button" href="mailto:u1476380@utah.edu">Email me</a>
+          <a class="button" href="https://www.linkedin.com/in/helenzhang08" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://github.com/jinghanz-808" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I am a Computer Science undergraduate at the University of Utah, where I work in the IoTrust Lab on self-supervised and multimodal representation learning for egocentric video, IMU, and neural data collected in real-world environments.</p>
+        <p>I began by using machine learning to identify meaningful events in continuous first-person video. As the project developed, I became more interested in what those events can tell us about human behavior and brain activity. A doorway crossing, for example, can involve turning, a change in lighting, and entering a different environment at nearly the same moment — which raises a careful question about what our data can and cannot distinguish.</p>
+        <p>That question now guides my work: I want to connect model evaluation with decisions about data collection, so that what a model has learned — and where it remains uncertain — helps us choose the conditions, comparisons, and measurements to collect next.</p>
+        <p>I am applying to PhD programs in Computer Science to continue this work, with a focus on machine learning and sensing systems for real-world navigation.</p>
+      </div>
+    </section>
+
+    <section id="research" class="section section-muted">
+      <div class="container">
+        <h2>Research</h2>
+        <p class="section-intro">I work on the Neural Science in the Wild project, studying human behavior and brain activity during real-world navigation.</p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Events in egocentric video</h3>
+            <p>Comparing annotated events with unsupervised boundaries from video features, including FINCH clustering and EgoVLP features. Annotated turns and clustering boundaries sometimes agree, but agreement alone does not mean they identify the same events — so I examine what each source captures and how it can answer our research question.</p>
+          </article>
+
+          <article class="card">
+            <h3>Brain activity during navigation</h3>
+            <p>Examining intracranial EEG (iEEG) alongside navigation events. I have observed power decreases around turns, navigation errors, and corrections, and I study how those changes relate to movement, memory, and environmental transitions — including turns at junctions and crossings through doorways.</p>
+          </article>
+
+          <article class="card">
+            <h3>Adaptive data collection</h3>
+            <p>Building an automated pipeline that turns manual checks into repeatable evidence checks: separate time anchors for when a door is seen, fixated, and crossed; control for head turns and overlapping events; and check whether effects hold across patients and walks. The goal is to use current evidence to design the next round of data collection.</p>
+          </article>
+        </div>
+
+        <h3 class="subheading">Selected findings</h3>
+        <ul class="findings">
+          <li><strong>Turns as event boundaries:</strong> anterior hippocampal theta, alpha, and beta activity decreases around perceived event boundaries, while theta (4–8 Hz) increases during event periods.</li>
+          <li><strong>Errors matter:</strong> incorrect turns show a larger pre-to-post power decrease than correct turns in 4 of 5 patients, and power also drops around corrections, whether by the patient or by others.</li>
+          <li><strong>Doorways have three times:</strong> a door can be seen, fixated, and crossed seconds apart. In one example, those times were −7.5 s, −7.1 s, and +1.0 s relative to the doorway label, and 33% of doors were first seen during a head turn.</li>
+          <li><strong>Effects are not always general:</strong> a pooled Lost End effect is driven largely by one patient, which is why I report per-patient contributions and leave-one-out checks before drawing conclusions.</li>
+        </ul>
+        <p class="note">Findings are preliminary analyses from ongoing work. Aggregate results are reported here; no individual patient data are shared.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Undergraduate Research Assistant</h3>
+            <p class="date">Jan 2026 — Present</p>
+          </div>
+          <p class="org">IoTrust Lab · University of Utah</p>
+          <ul>
+            <li>Conduct research on self-supervised and multimodal representation learning for egocentric video, IMU, and neural data collected in real-world environments.</li>
+            <li>Investigate temporal continuity, context-change detection, cross-modal synchronization, retrieval, and behavioral clustering to understand human activity and environmental context.</li>
+            <li>Process and analyze data using Python, PyTorch, NumPy, and Matplotlib; review literature on self-supervised learning, computer vision, and egocentric video understanding.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Full Stack Developer Intern</h3>
+            <p class="date">May 2024 — May 2025</p>
+          </div>
+          <p class="org">iLumens LLC · Salt Lake City, UT</p>
+          <ul>
+            <li>Redesigned and rebuilt the IoT platform&rsquo;s user-facing websites using React, TypeScript, UmiJS, and Ant Design, resulting in a 50% improvement in page load speed and a 30% boost in daily active user engagement.</li>
+            <li>Improved deployment workflows using Google Cloud Platform (GCP) and Kubernetes, enabling auto-scaling, secure releases, and zero-downtime updates for core website components.</li>
+            <li>Developed modular features using Vue.js, HTML5, and CSS3, contributing to a dynamic multi-language interface across desktop and mobile devices.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2>Projects</h2>
+        <article class="entry">
+          <div class="entry-head">
+            <h3>BitCat Coding Game</h3>
+            <p class="date">May 2026</p>
+          </div>
+          <ul>
+            <li>Developed an educational desktop game in C++ and Qt to teach programming concepts through interactive coding challenges.</li>
+            <li>Integrated Box2D physics to support interactive game mechanics.</li>
+            <li>Collaborated with teammates using Git and an Agile development workflow.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="container">
+        <h2>Education</h2>
+        <article class="entry">
+          <div class="entry-head">
+            <h3>University of Utah</h3>
+            <p class="date">Aug 2025 — May 2027</p>
+          </div>
+          <p class="org">B.S. in Computer Science</p>
+          <p>Relevant coursework: Intro to Practical ML, Artificial Intelligence, Software Practice, Models of Computation</p>
+        </article>
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Salt Lake Community College</h3>
+            <p class="date">Aug 2023 — Aug 2025</p>
+          </div>
+          <p class="org">A.S. in Computer Science</p>
+          <p>Relevant coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Web Development</p>
+        </article>
+
+        <h3 class="subheading">Skills</h3>
+        <p><strong>Programming:</strong> Java, Python, C#, C++, TypeScript, JavaScript (ES6+), HTML5, CSS3, SQL, PHP</p>
+        <p><strong>Frameworks &amp; tools:</strong> React, Vue.js, Umi.js, Ant Design, PyTorch, NumPy, Matplotlib, Git, GitHub, VS Code, Google Cloud Platform (GCP), Kubernetes, Figma, WordPress</p>
+        <p><strong>Languages:</strong> English (Fluent), Mandarin Chinese (Native)</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-muted">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>I am happy to talk about real-world navigation, egocentric video, multimodal learning, or PhD research in computer science.</p>
+        <p>
+          <a href="mailto:u1476380@utah.edu">u1476380@utah.edu</a><br>
+          <a href="https://www.linkedin.com/in/helenzhang08" target="_blank" rel="noopener">linkedin.com/in/helenzhang08</a><br>
+          <a href="https://github.com/jinghanz-808" target="_blank" rel="noopener">github.com/jinghanz-808</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Helen Zhang · University of Utah</p>
+    </div>
+  </footer>
+</body>
+</html>
